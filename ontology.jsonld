@@ -1,0 +1,3826 @@
+[
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/EncryptionOfIdentifiableInformation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Operation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasTerminologyCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/TerminologyCode"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataSource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/SeniorResearcher",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/Researcher"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/LattitudeLongitudeCollection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElementCollection"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/location_source_value",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "location_source_value"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "REfers to the location reference in the source dataset "
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/D-PII"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/varchar",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DBDatatype"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/float",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DBDatatype"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/REMOVE",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/RowDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/TerminologyCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_VOST",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/RowDataManipulationTechnique",
+      "http://www.semanticweb.org/CEDRIC/TransformAndReplace"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/ethnicity_source_value",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "ethnicity_source_value"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "refers to the grouping based on ethnicity"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/country_concept_id",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElement",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "country_concept_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Refers ti grouping based on country "
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Measurement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/EHRDataClass"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8372a0fce82741ad80c72c4ae590b289",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/ChangeOfFormatsWithIntermediaryTools"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/EncryptionOfIdentifiableInformation"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/MaskingOfItems"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/RemovalOfIdentifiableInformation"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/TransformationOfCertainDataItems"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasCollectionElement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Collection"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasCountry",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Address"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_AND",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/RowDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#topDataProperty",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Company",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasDataElementSelection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElementCollectionSelection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElementSelection"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/country_source_value",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "country_source_value"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Refers ti grouping based on country "
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/CompoundFilter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/FilterRule"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Institution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasPrivacyRules",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/EntityWithPrivacyGovernance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/PrivacyRule"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/SamsonTu",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/Requestor"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/L-SPII"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/isMemberOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/StanfordUniversity"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ValueSet"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/TimeInterval",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/TimeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/yearOfBirthDataElementCollection",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElementSelection"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataElement": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/year_of_birth"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Image",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/EHRDataClass"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasLogicalOperator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/CompoundFilter"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/LogicalOperator"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasRequestedData",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataRequest"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataSet"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataElementSelection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:N706ac11be34747dc9f67e6a21787c565"
+      }
+    ]
+  },
+  {
+    "@id": "_:N706ac11be34747dc9f67e6a21787c565",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/hasDataElement"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElement"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Organization",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/dataElementDataProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_OR",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/RowDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Requestor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:N2d49d561da8e4f889945c52dd91c6e4d"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2d49d561da8e4f889945c52dd91c6e4d",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/PrivacyLevel"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/JuniorResearcher",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/Researcher"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/EHRDataClass",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasSelectedDataManipulationTechnique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC#DataSetManipulationTechnique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataManipulationTechnique"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/ethnicity_source_concept_id",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "ethnicity_source_concept_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "refers to the grouping based on ethnicity"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Request",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataStatus"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Requestor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataElement_13",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/D-PII"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/ResearchInstitute",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasTerminologyID",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/TerminologyCode"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_BIN",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/RowDataManipulationTechnique",
+      "http://www.semanticweb.org/CEDRIC/TransformAndReplace"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/location_id",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "location_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "A unique value for a location. Many people can be linked to more than one person living in this address. However, the level of identifiability could be high with this"
+      },
+      {
+        "@value": "Directly links to an individual patient living in a location linked via location table. Repating values for people who live/lived in the same household at the time of the hospital encounter"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/D-PII"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      },
+      {
+        "@value": "Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataSet_5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataSet"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasData": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataCollection_11"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasStatus": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Request"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/RemovalOfIdentifiableInformation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Operation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/address_1",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElement",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "address_1"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Refers to the street address, possibly referring to a house number/ apartment number (?)"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/isMemberOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Requestor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/attribute",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/dataElementDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/dataElementObjectProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Procedure_occurrence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/EHRDataClass"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/race_concept_id",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "race_concept_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Individuals grouped into races"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/ComparisonFilter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/FilterRule"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataElement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:N55ac7e07f0b64ddd8be4f7b5aa8f77ce"
+      },
+      {
+        "@id": "_:N284590f8d1144a9295eb4151d2c2d858"
+      },
+      {
+        "@id": "_:Nc4c2dd00e28c4b14900db2384a62a1fd"
+      }
+    ]
+  },
+  {
+    "@id": "_:N55ac7e07f0b64ddd8be4f7b5aa8f77ce",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/PrivacyLevel"
+      }
+    ]
+  },
+  {
+    "@id": "_:N284590f8d1144a9295eb4151d2c2d858",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/attribute"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc4c2dd00e28c4b14900db2384a62a1fd",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/table"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/D-PRI",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PrivacyLevel"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasDataElementManipulationTechnique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElementSelection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElementManipulationTechnique"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/hasSelectedDataManipulationTechnique"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/StanfordUniversity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/AcademicInstitution"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasAddress": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/94305"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/gender_concept_id",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElement",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "gender_concept_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Individuals grouped into genders"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/TransformAndReplace",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RowDataManipulationTechnique"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/OR",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/LogicalOperator"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/state",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElement",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "state"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Refers ti grouping based on state"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/ChangeOfFormatsWithIntermediaryTools",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Operation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasRequestor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataRequest"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasAddress",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Organization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Address"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasData",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataSet"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/race_source_value",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElement",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "race_source_value"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "refers to the grouping based on race"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasDataElement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElement"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/TimeEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_AVERAGE",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasQueryExpression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Address",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/PathologyReport",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElement"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Note"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/address_2",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElement",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "address_2"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_TOTAL_POP",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataSet"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataStatus"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/WestSydneyUniversity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/AcademicInstitution"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataElementCollection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Collection"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_MIN",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasDataType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/dataElementObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/L-SPII",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PrivacyLevel"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Collection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataElementSelection_12",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElementSelection"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataElement": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/person_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataElementManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/D-PII",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PrivacyLevel"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_TOTAL",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataElementCollectionSelection_1",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElementCollectionSelection"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataElementCollection": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/birthdayCollection"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataElementSelection": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/yearOfBirthDataElementCollection"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/dayOfBirthDataElementSelection"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/monthOfBirthDataElementSelection"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/dataElementObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/person_id",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "person_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Directly links to an individual patient. Unique values"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/float"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/D-PII"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasDataSetManipulationTechnique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:Ne57e2d27423843e0bb0b03c60515269c"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC#DataSetManipulationTechnique"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/hasSelectedDataManipulationTechnique"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne57e2d27423843e0bb0b03c60515269c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/DataElementCollectionSelection"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/DataSet"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/dayOfBirthDataElementSelection",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElementSelection"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataElement": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/day_of_birth"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/table",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/dataElementDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/care_site_id",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "care_site_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Individuals grouped into care sites they were treated at"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/zip",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "zip"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Refers ti grouping based on zip"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/latitude",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElement",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "latitude"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "When present with longitude this can be a D-PII"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/float"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/birth_datetime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "birth_datetime"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Individuals are grouped into birth time. If present within the set becomes L-SPII"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/datetime"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/county",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "county"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Refers ti grouping based on county "
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/dataElementObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataCollection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Collection"
+      },
+      {
+        "@id": "_:Nc7bb499a41ce4d5fbbc7b2384f2f6baa"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc7bb499a41ce4d5fbbc7b2384f2f6baa",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/hasCollectionElement"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:Na4ba55e655934f29a760058c5065a082"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na4ba55e655934f29a760058c5065a082",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/DataElementSelection"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/DataElementCollectionSelection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Mid-LevelResearcher",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/Researcher"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/MASK",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/RowDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/monthOfBirthDataElementSelection",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElementSelection"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataElement": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/month_of_birth"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/LogicalOperator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ValueSet"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/NL-API",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PrivacyLevel"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasPostalCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Address"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/TerminologyCode"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElementManipulationTechnique"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Drug_exposure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/EHRDataClass"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasOutput",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataManipulationTechnique"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataSet"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/PrivacyLevel"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/RowDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "_:N1625c8a67d7e47f89baa2583ea8661cb",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/AcademicInstitution"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/Company"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/ResearchInstitute"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasDataElementCollection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElementCollectionSelection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElementCollection"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Location",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/EHRDataClass"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/gender_source_concept_id",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElement",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "gender_source_concept_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "refers to the grouping based on gender"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/TransformationOfCertainDataItems",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Operation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Aggregation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/TransformAndReplace"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasPeriod",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/TimeInterval"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/TimePoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/TimeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataRequest",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:N9031b16bd78b4d88a33663c4b173a235"
+      },
+      {
+        "@id": "_:Nc35a23bdd8394932bc1cb9c1f19b0e49"
+      },
+      {
+        "@id": "_:N28f0fb0683154e68a7d0bf0d9f6964b5"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9031b16bd78b4d88a33663c4b173a235",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/hasRequestedData"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataSet"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc35a23bdd8394932bc1cb9c1f19b0e49",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/hasRequestor"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Requestor"
+      }
+    ]
+  },
+  {
+    "@id": "_:N28f0fb0683154e68a7d0bf0d9f6964b5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/hasStatus"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataStatus"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Condition_occurrence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/EHRDataClass"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/94305",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/Address"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasCity": [
+      {
+        "@value": "Stanford"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasCountry": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPostalCode": [
+      {
+        "@value": "94305"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasState": [
+      {
+        "@value": "CA"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/datetime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DBDatatype"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/forProject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DBDatatype",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ValueSet"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasTerminologyName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/TerminologyCode"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Role",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/R-PRI",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PrivacyLevel"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataManipulationTechnique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Insurance",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Company"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/provider_id",
+    "@type": [
+      "http://www.semanticweb.org/CEDRIC/DataElement",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "provider_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Individuals grouped into providers who treated them"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Operation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Approved",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataStatus"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasCity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Address"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_AVERAGE_POP",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/longitude",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasPrivacyRuleDescription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/PrivacyRule"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasStreet",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Address"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/NOT",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/LogicalOperator"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_MODE",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataElementManipulationTechnique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataManipulationTechnique"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Researcher",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/person_source_value",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "person_source_value"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Source value tables are possible references - OHDSI suggests person_soruce value could sometimes have identifiers "
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/D-PII"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataCollection_11",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataCollection"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasCollectionElement": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElementSelection_12"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElementCollectionSelection_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/race_source_concept_id",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "race_source_concept_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "refers to the grouping based on race"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasFilterRule",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N3229c8d4dbb0475598da0c0a31808fa5"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/FilterRule"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3229c8d4dbb0475598da0c0a31808fa5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/CompoundFilter"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/DataElementCollectionSelection"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/DataElementSelection"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/DataSet"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/PrivacyLevel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ValueSet"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N7ab76e53b36341f3875762bbb32f439a"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7ab76e53b36341f3875762bbb32f439a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/D-PII"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/D-PRI"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/L-SPII"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/NL-API"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/comments",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/dataElementDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_MAX",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasDescriptor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataElementCollectionSelection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/ethnicity_concept_id",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "ethnicity_concept_id"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Individuals grouped into ethnicities"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Vist_occurrence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/EHRDataClass"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/int",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DBDatatype"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/month_of_birth",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "month_of_birth"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Individuals are grouped into birth month. If present within the set becomes L-SPII"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/AND",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/LogicalOperator"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Person",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/EHRDataClass"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/PopulationDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Video",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/EHRDataClass"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/RowDataManipulationTechnique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataElementManipulationTechnique"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataSet",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:Nd6fcc00161e240bbbbd319fa99fb6f7f"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd6fcc00161e240bbbbd319fa99fb6f7f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/hasData"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataCollection"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/day_of_birth",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "day_of_birth"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Individuals are grouped into birth day. If present within the set becomes L-SPII"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasState",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Address"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/PrivacyRule",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/Note",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/EHRDataClass"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/birthdayCollection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElementCollection"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasCollectionElement": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/day_of_birth"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/month_of_birth"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/year_of_birth"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/D-PRI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/hasCardinality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Collection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/city",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "city"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Refers ti grouping based on city"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/MaskingOfItems",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Operation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/RowDataManipulationTechnique"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/year_of_birth",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "year_of_birth"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "Individuals are grouped into birth years. If present within the set becomes L-SPII"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/int"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MAX"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MIN_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MEDIAN"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VCONST"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_VOST"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/ValueSet",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/DataRequest_1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataRequest"
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasRequestedData": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/DataSet_5"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasRequestor": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/SamsonTu"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/FilterRule",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/AcademicInstitution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/gender_source_value",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.semanticweb.org/CEDRIC/DataElement"
+    ],
+    "http://www.semanticweb.org/CEDRIC/attribute": [
+      {
+        "@value": "gender_source_value"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/comments": [
+      {
+        "@value": "refers to the grouping based on gender"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasDataType": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/varchar"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/hasPrivacyLevel": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/R-PRI"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possiblePopulationManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE_POP"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_MODE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/possibleRowDataManipulationTechnique": [
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/ENCRYPT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/MASK"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/T_BIN"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/RE_FORMAT"
+      },
+      {
+        "@id": "http://www.semanticweb.org/CEDRIC/REMOVE"
+      }
+    ],
+    "http://www.semanticweb.org/CEDRIC/table": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/CEDRIC/EntityWithPrivacyGovernance",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:Na8a835d0ad1c4e56b0e8849609e8e9b9"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na8a835d0ad1c4e56b0e8849609e8e9b9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/DataElement"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/DataElementCollection"
+          },
+          {
+            "@id": "http://www.semanticweb.org/CEDRIC/DataRequest"
+          }
+        ]
+      }
+    ]
+  }
+]
