@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Tables</h1>
+        <div class="tableListWrap"></div>
+    </div>
+    <div class="tableDetailsMain hide">
+        <div class="tableLDetailsWrap"></div>
+        <button id="selectButton" class="btns">Submit</button>
+    </div>
+
+    <div class="sTableDetailsMain hide">
+        <div class="sTableLDetailsWrap"></div>
+        <button id="convertJson" class="btns">Convert To JSON</button>
+    </div>
+
+    <div class="jsonWrap hide">
+        <textarea name="" id="jsonOutput" cols="30" rows="10"></textarea>
+        <button id="jsonCopy" class="btns">copy code</button>
+        <a id="downloadJson">
+            <button class="btns">Download to a file</button>
+        </a>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

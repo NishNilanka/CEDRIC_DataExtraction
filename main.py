@@ -9,10 +9,19 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     g = rdflib.Graph()
     g.parse("CEDRIC.owl", format="xml")
-    #print(g)
-    # Iterate through the triples in the graph
-    for s, p, o in g:
-        print(s, p, o)
+    print("Hi")
+    qres = g.query(
+    """SELECT ?predicate ?object
+       WHERE {
+          <http://www.semanticweb.org/CEDRIC/gender_source_concept_id> ?predicate ?object .
+       }""")
+    count = 0
+    for row in qres:
+        count += 1
+        print(row)
+    print(count)
+    #for s, p, o in g:
+    #    print(s, p, o)
         #print(s[34:])
         #print(p)  # Press Ctrl+F8 to toggle the breakpoint.
 
