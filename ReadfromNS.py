@@ -54,7 +54,6 @@ for s, p, o in g.triples((None, RDF.type, OWL.NamedIndividual)):
                 str(g.value(s, Namespace("http://www.semanticweb.org/CEDRIC/").hasPrivacyLevel))
             hasPrivacyLevel = check_null(hasPrivacyLevel)
             # tables[table] = [attribute, possibleRowDataManipulationTechnique, possiblePopulationManipulationTechnique, hasPrivacyLevel]
-            # Do something with the attribute and comments values
             data = {
                 "attribute": attribute,
                 "dataType":datatype,
@@ -70,5 +69,4 @@ for s, p, o in g.triples((None, RDF.type, OWL.NamedIndividual)):
 
 #print(tables)
 with open('data.json', 'w') as f:
-    #Write the dictionary to the file in JSON format
     json.dump(tables, f)
