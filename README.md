@@ -10,3 +10,8 @@
 4. data.json - JSON file created from the ReadfromNS.py file.
 
 5. index.html - .html file used to load the UI
+
+
+Run a simple python server using the following comand
+
+```python -m http.server```
