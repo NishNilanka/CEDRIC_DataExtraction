@@ -178,6 +178,7 @@ $(document).ready(function(){
 		for (let i = 0; i < selectValues.length; i++) {
 		  for (let j = 0; j < selectValues[i].length; j++) {
 			if (typeof selectValues[i][j] === 'object') {
+			  let attributes = " "
 			  for (let k = 0; k < selectValues[i][j].length; k++) {
 				
 				table_name = selectValues[i][0];
@@ -185,9 +186,13 @@ $(document).ready(function(){
 				value2 = selectValues[i][j][k].dataType
 				value3 = selectValues[i][j][k].dSensitivity
 				value4 = selectValues[i][j][k].filterRule
-				
-				query += "INSERT INTO "+ table_name + "(attribute, dataType, dSensitivity, filterRule) VALUES ( "+ value1 +","+ value2 +","+ value3 +","+ value4 +");\n";
+				attributes = attributes + value1 + ", "
+				//query += "INSERT INTO "+ table_name + "(attribute, dataType, dSensitivity, filterRule) VALUES ( "+ value1 +","+ value2 +","+ value3 +","+ value4 +");\n";
+
 			  }
+
+			  query += "SELECT" + attributes   + "FROM "+ table_name +";\n";
+
 			} else {
 			  console.log(selectValues[i][j]);
 			}
