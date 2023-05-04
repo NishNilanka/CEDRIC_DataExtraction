@@ -1,0 +1,2086 @@
+@prefix : <http://www.semanticweb.org/CEDRIC/OMOP#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.semanticweb.org/CEDRIC/OMOP> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CARE_SITEproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CARE_SITEproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/COHORT_DEFINITIONproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/COHORT_DEFINITIONproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/COHORTproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/COHORTproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_ANCESTORproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_ANCESTORproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_CLASSproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_CLASSproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_RELATIONSHIPproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_RELATIONSHIPproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_SYNONYMproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_SYNONYMproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_ERAproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_ERAproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DEATHproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DEATHproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DOMAINproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DOMAINproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DOSE_ERAproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DOSE_ERAproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DRUG_ERAproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DRUG_ERAproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/EPISODE_EVENTproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/EPISODE_EVENTproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/FACT_RELATIONSHIPproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/FACT_RELATIONSHIPproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/METADATAproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/METADATAproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATION_PERIODproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATION_PERIODproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/RELATIONSHIPproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/RELATIONSHIPproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAPproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAPproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/VOCABULARYproperty
+
+<http://www.semanticweb.org/CEDRIC/OMOP/VOCABULARYproperty> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/address_1
+
+<http://www.semanticweb.org/CEDRIC/OMOP/address_1> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/address_2
+
+<http://www.semanticweb.org/CEDRIC/OMOP/address_2> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/admitted_from_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/admitted_from_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/admitted_from_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/admitted_from_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/amount_allowed
+
+<http://www.semanticweb.org/CEDRIC/OMOP/amount_allowed> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/amount_unit_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/amount_unit_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/amount_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/amount_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/anatomic_site_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/anatomic_site_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/anatomic_site_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/anatomic_site_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/ancestor_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/ancestor_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_ANCESTORproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/birth_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/birth_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/box_size
+
+<http://www.semanticweb.org/CEDRIC/OMOP/box_size> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/care_site_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/care_site_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CARE_SITEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/care_site_name
+
+<http://www.semanticweb.org/CEDRIC/OMOP/care_site_name> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CARE_SITEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/care_site_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/care_site_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CARE_SITEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cause_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cause_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEATHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cause_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cause_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEATHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cause_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cause_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEATHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cdm_etl_reference
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cdm_etl_reference> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cdm_holder
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cdm_holder> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cdm_release_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cdm_release_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cdm_source_abbreviation
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cdm_source_abbreviation> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cdm_source_name
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cdm_source_name> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cdm_version
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cdm_version> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cdm_version_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cdm_version_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/city
+
+<http://www.semanticweb.org/CEDRIC/OMOP/city> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cohort_definition_description
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cohort_definition_description> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COHORT_DEFINITIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cohort_definition_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cohort_definition_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COHORT_DEFINITIONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/COHORTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cohort_definition_name
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cohort_definition_name> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COHORT_DEFINITIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cohort_definition_syntax
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cohort_definition_syntax> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COHORT_DEFINITIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cohort_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cohort_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COHORTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cohort_initiation_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cohort_initiation_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COHORT_DEFINITIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cohort_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cohort_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COHORTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/concept_class_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/concept_class_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_CLASSproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/concept_class_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/concept_class_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_CLASSproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/concept_class_name
+
+<http://www.semanticweb.org/CEDRIC/OMOP/concept_class_name> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_CLASSproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/concept_code
+
+<http://www.semanticweb.org/CEDRIC/OMOP/concept_code> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_SYNONYMproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/concept_id_1
+
+<http://www.semanticweb.org/CEDRIC/OMOP/concept_id_1> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/concept_id_2
+
+<http://www.semanticweb.org/CEDRIC/OMOP/concept_id_2> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/concept_name
+
+<http://www.semanticweb.org/CEDRIC/OMOP/concept_name> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/concept_synonym_name
+
+<http://www.semanticweb.org/CEDRIC/OMOP/concept_synonym_name> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_SYNONYMproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_ERAproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_end_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_end_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_era_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_era_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_era_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_era_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_era_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_era_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_occurrence_count
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_occurrence_count> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_occurrence_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_occurrence_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_start_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_start_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_status_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_status_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_status_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_status_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/condition_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/condition_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cost_domain_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cost_domain_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cost_event_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cost_event_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cost_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cost_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/cost_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/cost_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/country_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/country_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/country_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/country_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/county
+
+<http://www.semanticweb.org/CEDRIC/OMOP/county> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/currency_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/currency_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/day_of_birth
+
+<http://www.semanticweb.org/CEDRIC/OMOP/day_of_birth> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/days_supply
+
+<http://www.semanticweb.org/CEDRIC/OMOP/days_supply> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/dea
+
+<http://www.semanticweb.org/CEDRIC/OMOP/dea> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/death_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/death_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEATHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/death_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/death_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEATHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/death_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/death_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEATHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/defines_ancestry
+
+<http://www.semanticweb.org/CEDRIC/OMOP/defines_ancestry> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/definition_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/definition_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COHORT_DEFINITIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/denominator_unit_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/denominator_unit_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/denominator_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/denominator_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/descendant_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/descendant_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_ANCESTORproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/device_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/device_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/device_exposure_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/device_exposure_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/device_exposure_end_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/device_exposure_end_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/device_exposure_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/device_exposure_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/device_exposure_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/device_exposure_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/device_exposure_start_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/device_exposure_start_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/device_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/device_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/device_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/device_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/device_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/device_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/discharged_to_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/discharged_to_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/discharged_to_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/discharged_to_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/disease_status_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/disease_status_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/disease_status_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/disease_status_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/domain_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/domain_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DOMAINproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/domain_concept_id_1
+
+<http://www.semanticweb.org/CEDRIC/OMOP/domain_concept_id_1> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/FACT_RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/domain_concept_id_2
+
+<http://www.semanticweb.org/CEDRIC/OMOP/domain_concept_id_2> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/FACT_RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/domain_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/domain_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DOMAINproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/domain_name
+
+<http://www.semanticweb.org/CEDRIC/OMOP/domain_name> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DOMAINproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/dose_era_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/dose_era_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DOSE_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/dose_era_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/dose_era_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DOSE_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/dose_era_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/dose_era_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DOSE_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/dose_unit_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/dose_unit_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/dose_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/dose_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DOSE_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drg_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drg_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drg_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drg_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DOSE_ERAproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_ERAproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_era_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_era_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_era_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_era_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_era_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_era_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_count
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_count> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_end_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_end_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_start_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_exposure_start_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/drug_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/drug_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/encoding_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/encoding_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_end_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_end_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_event_field_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_event_field_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODE_EVENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODE_EVENTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_number
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_number> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_object_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_object_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_parent_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_parent_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_start_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_start_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/episode_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/episode_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/ethnicity_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/ethnicity_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/ethnicity_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/ethnicity_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/ethnicity_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/ethnicity_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/event_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/event_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/EPISODE_EVENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/fact_id_1
+
+<http://www.semanticweb.org/CEDRIC/OMOP/fact_id_1> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/FACT_RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/fact_id_2
+
+<http://www.semanticweb.org/CEDRIC/OMOP/fact_id_2> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/FACT_RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/family_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/family_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/gap_days
+
+<http://www.semanticweb.org/CEDRIC/OMOP/gap_days> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_ERAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/gender_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/gender_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/gender_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/gender_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/gender_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/gender_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/ingredient_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/ingredient_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/invalid_reason
+
+<http://www.semanticweb.org/CEDRIC/OMOP/invalid_reason> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_RELATIONSHIPproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/is_hierarchical
+
+<http://www.semanticweb.org/CEDRIC/OMOP/is_hierarchical> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/language_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/language_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_SYNONYMproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/latitude
+
+<http://www.semanticweb.org/CEDRIC/OMOP/latitude> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/lexical_variant
+
+<http://www.semanticweb.org/CEDRIC/OMOP/lexical_variant> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/location_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/location_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CARE_SITEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/location_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/location_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/longitude
+
+<http://www.semanticweb.org/CEDRIC/OMOP/longitude> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/lot_number
+
+<http://www.semanticweb.org/CEDRIC/OMOP/lot_number> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/max_levels_of_separation
+
+<http://www.semanticweb.org/CEDRIC/OMOP/max_levels_of_separation> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_ANCESTORproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/meas_event_field_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/meas_event_field_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/measurement_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/measurement_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/measurement_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/measurement_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/measurement_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/measurement_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/measurement_event_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/measurement_event_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/measurement_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/measurement_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/measurement_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/measurement_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/measurement_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/measurement_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/measurement_time
+
+<http://www.semanticweb.org/CEDRIC/OMOP/measurement_time> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/measurement_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/measurement_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/metadata_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/metadata_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/METADATAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/metadata_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/metadata_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/METADATAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/metadata_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/metadata_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/METADATAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/metadata_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/metadata_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/METADATAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/metadata_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/metadata_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/METADATAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/min_levels_of_separation
+
+<http://www.semanticweb.org/CEDRIC/OMOP/min_levels_of_separation> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_ANCESTORproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/modifier_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/modifier_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/modifier_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/modifier_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/month_of_birth
+
+<http://www.semanticweb.org/CEDRIC/OMOP/month_of_birth> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/name
+
+<http://www.semanticweb.org/CEDRIC/OMOP/name> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/METADATAproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/nlp_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/nlp_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/nlp_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/nlp_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/nlp_system
+
+<http://www.semanticweb.org/CEDRIC/OMOP/nlp_system> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_class_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_class_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_event_field_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_event_field_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_event_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_event_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_nlp_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_nlp_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_nlp_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_nlp_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_nlp_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_nlp_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_text
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_text> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_title
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_title> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/note_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/note_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/npi
+
+<http://www.semanticweb.org/CEDRIC/OMOP/npi> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/numerator_unit_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/numerator_unit_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/numerator_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/numerator_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/obs_event_field_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/obs_event_field_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/observation_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/observation_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/observation_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/observation_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/observation_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/observation_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/observation_event_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/observation_event_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/observation_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/observation_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/observation_period_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/observation_period_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATION_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/observation_period_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/observation_period_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATION_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/observation_period_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/observation_period_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATION_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/observation_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/observation_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/observation_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/observation_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/observation_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/observation_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/offset
+
+<http://www.semanticweb.org/CEDRIC/OMOP/offset> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/operator_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/operator_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/paid_by_patient
+
+<http://www.semanticweb.org/CEDRIC/OMOP/paid_by_patient> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/paid_by_payer
+
+<http://www.semanticweb.org/CEDRIC/OMOP/paid_by_payer> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/paid_by_primary
+
+<http://www.semanticweb.org/CEDRIC/OMOP/paid_by_primary> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/paid_dispensing_fee
+
+<http://www.semanticweb.org/CEDRIC/OMOP/paid_dispensing_fee> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/paid_ingredient_cost
+
+<http://www.semanticweb.org/CEDRIC/OMOP/paid_ingredient_cost> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/paid_patient_coinsurance
+
+<http://www.semanticweb.org/CEDRIC/OMOP/paid_patient_coinsurance> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/paid_patient_copay
+
+<http://www.semanticweb.org/CEDRIC/OMOP/paid_patient_copay> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/paid_patient_deductible
+
+<http://www.semanticweb.org/CEDRIC/OMOP/paid_patient_deductible> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/parent_visit_detail_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/parent_visit_detail_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/payer_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/payer_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/payer_plan_period_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/payer_plan_period_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/payer_plan_period_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/payer_plan_period_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/payer_plan_period_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/payer_plan_period_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/payer_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/payer_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/payer_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/payer_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/period_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/period_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATION_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/person_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/person_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_ERAproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DEATHproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DOSE_ERAproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_ERAproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/EPISODEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATION_PERIODproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/person_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/person_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/place_of_service_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/place_of_service_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CARE_SITEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/place_of_service_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/place_of_service_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CARE_SITEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/plan_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/plan_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/plan_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/plan_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/plan_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/plan_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/preceding_visit_detail_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/preceding_visit_detail_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/preceding_visit_occurrence_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/preceding_visit_occurrence_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/procedure_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/procedure_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/procedure_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/procedure_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/procedure_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/procedure_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/procedure_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/procedure_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/procedure_end_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/procedure_end_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/procedure_occurrence_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/procedure_occurrence_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/procedure_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/procedure_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/procedure_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/procedure_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/procedure_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/procedure_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/production_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/production_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/provider_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/provider_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/provider_name
+
+<http://www.semanticweb.org/CEDRIC/OMOP/provider_name> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/provider_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/provider_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/qualifier_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/qualifier_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/qualifier_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/qualifier_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/quantity
+
+<http://www.semanticweb.org/CEDRIC/OMOP/quantity> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/race_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/race_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/race_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/race_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/race_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/race_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/range_high
+
+<http://www.semanticweb.org/CEDRIC/OMOP/range_high> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/range_low
+
+<http://www.semanticweb.org/CEDRIC/OMOP/range_low> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/refills
+
+<http://www.semanticweb.org/CEDRIC/OMOP/refills> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/relationship_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/relationship_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/FACT_RELATIONSHIPproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/relationship_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/relationship_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_RELATIONSHIPproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/relationship_name
+
+<http://www.semanticweb.org/CEDRIC/OMOP/relationship_name> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/revenue_code_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/revenue_code_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/revenue_code_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/revenue_code_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/reverse_relationship_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/reverse_relationship_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/RELATIONSHIPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/route_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/route_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/route_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/route_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/section_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/section_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/sig
+
+<http://www.semanticweb.org/CEDRIC/OMOP/sig> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/snippet
+
+<http://www.semanticweb.org/CEDRIC/OMOP/snippet> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/source_code
+
+<http://www.semanticweb.org/CEDRIC/OMOP/source_code> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/source_code_description
+
+<http://www.semanticweb.org/CEDRIC/OMOP/source_code_description> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/source_description
+
+<http://www.semanticweb.org/CEDRIC/OMOP/source_description> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/source_documentation_reference
+
+<http://www.semanticweb.org/CEDRIC/OMOP/source_documentation_reference> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/source_release_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/source_release_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/source_vocabulary_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/source_vocabulary_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/specialty_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/specialty_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/specialty_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/specialty_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/specialty_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/specialty_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/specimen_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/specimen_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/specimen_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/specimen_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/specimen_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/specimen_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/specimen_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/specimen_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/specimen_source_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/specimen_source_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/specimen_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/specimen_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/specimen_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/specimen_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/sponsor_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/sponsor_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/sponsor_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/sponsor_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/sponsor_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/sponsor_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/standard_concept
+
+<http://www.semanticweb.org/CEDRIC/OMOP/standard_concept> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/state
+
+<http://www.semanticweb.org/CEDRIC/OMOP/state> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/stop_reason
+
+<http://www.semanticweb.org/CEDRIC/OMOP/stop_reason> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/stop_reason_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/stop_reason_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/stop_reason_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/stop_reason_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/stop_reason_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/stop_reason_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIODproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/subject_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/subject_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COHORT_DEFINITIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/subject_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/subject_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COHORTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/target_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/target_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/target_vocabulary_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/target_vocabulary_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/term_exists
+
+<http://www.semanticweb.org/CEDRIC/OMOP/term_exists> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/term_modifiers
+
+<http://www.semanticweb.org/CEDRIC/OMOP/term_modifiers> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/term_temporal
+
+<http://www.semanticweb.org/CEDRIC/OMOP/term_temporal> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/total_charge
+
+<http://www.semanticweb.org/CEDRIC/OMOP/total_charge> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/total_cost
+
+<http://www.semanticweb.org/CEDRIC/OMOP/total_cost> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/total_paid
+
+<http://www.semanticweb.org/CEDRIC/OMOP/total_paid> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/COSTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/unique_device_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/unique_device_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/unit_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/unit_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DOSE_ERAproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/unit_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/unit_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/unit_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/unit_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/SPECIMENproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/valid_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/valid_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_RELATIONSHIPproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/valid_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/valid_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_RELATIONSHIPproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTHproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAPproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/value_as_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/value_as_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/METADATAproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/value_as_number
+
+<http://www.semanticweb.org/CEDRIC/OMOP/value_as_number> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/METADATAproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/value_as_string
+
+<http://www.semanticweb.org/CEDRIC/OMOP/value_as_string> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/METADATAproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/value_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/value_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/verbatim_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/verbatim_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_end_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_end_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_start_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_start_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_detail_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_end_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_end_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_end_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_end_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_occurrence_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_occurrence_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSUREproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/NOTEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATIONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAILproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_source_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_source_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_source_value
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_source_value> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_start_date
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_start_date> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_start_datetime
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_start_datetime> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/visit_type_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/visit_type_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCEproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/vocabulary_concept_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/vocabulary_concept_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VOCABULARYproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/vocabulary_id
+
+<http://www.semanticweb.org/CEDRIC/OMOP/vocabulary_id> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CONCEPTproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VOCABULARYproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/vocabulary_name
+
+<http://www.semanticweb.org/CEDRIC/OMOP/vocabulary_name> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VOCABULARYproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/vocabulary_reference
+
+<http://www.semanticweb.org/CEDRIC/OMOP/vocabulary_reference> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/VOCABULARYproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/vocabulary_version
+
+<http://www.semanticweb.org/CEDRIC/OMOP/vocabulary_version> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCEproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/VOCABULARYproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/year_of_birth
+
+<http://www.semanticweb.org/CEDRIC/OMOP/year_of_birth> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/PERSONproperty> , <http://www.semanticweb.org/CEDRIC/OMOP/PROVIDERproperty> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/zip
+
+<http://www.semanticweb.org/CEDRIC/OMOP/zip> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.semanticweb.org/CEDRIC/OMOP/LOCATIONproperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CARE_SITE
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CARE_SITE> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCE
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CDM_SOURCE> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/COHORT
+
+<http://www.semanticweb.org/CEDRIC/OMOP/COHORT> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/COHORT_DEFINITION
+
+<http://www.semanticweb.org/CEDRIC/OMOP/COHORT_DEFINITION> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_ANCESTOR
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_ANCESTOR> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_CLASS
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_CLASS> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_RELATIONSHIP
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_RELATIONSHIP> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_SYNONYM
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONCEPT_SYNONYM> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_ERA
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_ERA> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCE
+
+<http://www.semanticweb.org/CEDRIC/OMOP/CONDITION_OCCURRENCE> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/COST
+
+<http://www.semanticweb.org/CEDRIC/OMOP/COST> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DEATH
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DEATH> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSURE
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DEVICE_EXPOSURE> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DOMAIN
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DOMAIN> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DOSE_ERA
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DOSE_ERA> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DRUG_ERA
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DRUG_ERA> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSURE
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DRUG_EXPOSURE> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTH
+
+<http://www.semanticweb.org/CEDRIC/OMOP/DRUG_STRENGTH> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/EPISODE
+
+<http://www.semanticweb.org/CEDRIC/OMOP/EPISODE> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/EPISODE_EVENT
+
+<http://www.semanticweb.org/CEDRIC/OMOP/EPISODE_EVENT> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/FACT_RELATIONSHIP
+
+<http://www.semanticweb.org/CEDRIC/OMOP/FACT_RELATIONSHIP> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/LOCATION
+
+<http://www.semanticweb.org/CEDRIC/OMOP/LOCATION> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENT
+
+<http://www.semanticweb.org/CEDRIC/OMOP/MEASUREMENT> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/METADATA
+
+<http://www.semanticweb.org/CEDRIC/OMOP/METADATA> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/NOTE
+
+<http://www.semanticweb.org/CEDRIC/OMOP/NOTE> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLP
+
+<http://www.semanticweb.org/CEDRIC/OMOP/NOTE_NLP> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATION
+
+<http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATION> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATION_PERIOD
+
+<http://www.semanticweb.org/CEDRIC/OMOP/OBSERVATION_PERIOD> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass
+
+<http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> a owl:Class .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIOD
+
+<http://www.semanticweb.org/CEDRIC/OMOP/PAYER_PLAN_PERIOD> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/PERSON
+
+<http://www.semanticweb.org/CEDRIC/OMOP/PERSON> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCE
+
+<http://www.semanticweb.org/CEDRIC/OMOP/PROCEDURE_OCCURRENCE> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/PROVIDER
+
+<http://www.semanticweb.org/CEDRIC/OMOP/PROVIDER> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/RELATIONSHIP
+
+<http://www.semanticweb.org/CEDRIC/OMOP/RELATIONSHIP> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAP
+
+<http://www.semanticweb.org/CEDRIC/OMOP/SOURCE_TO_CONCEPT_MAP> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/SPECIMEN
+
+<http://www.semanticweb.org/CEDRIC/OMOP/SPECIMEN> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAIL
+
+<http://www.semanticweb.org/CEDRIC/OMOP/VISIT_DETAIL> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCE
+
+<http://www.semanticweb.org/CEDRIC/OMOP/VISIT_OCCURRENCE> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# http://www.semanticweb.org/CEDRIC/OMOP/VOCABULARY
+
+<http://www.semanticweb.org/CEDRIC/OMOP/VOCABULARY> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/CEDRIC/OMOP/OMOPClass> .
+# 
+# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
